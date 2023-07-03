@@ -1,0 +1,26 @@
+{
+  "name": "typedorm-serverless-bundle",
+  "author": "Yokota",
+  "version": "1.0.0",
+  "description": "TypeDORM and serverless-bundle example with error",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.363.0",
+    "@aws-sdk/lib-dynamodb": "^3.363.0",
+    "@typedorm/common": "^1.15.4",
+    "@typedorm/core": "^1.15.4",
+    "@types/node": "^20.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "aws-sdk": "^2.1410.0",
+    "eslint": "^8.44.0",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^6.0.0",
+    "serverless-offline": "^12.0.4"
+  }
+}

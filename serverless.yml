@@ -1,0 +1,26 @@
+service: typedorm-serverless-typescript-starter
+
+package:
+  individually: true
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+
+custom:
+  bundle:
+    linting: false
+    tsConfig: "tsconfig.json"
+
+functions:
+  hello:
+    handler: src/handlers/hello.default
+    events:
+      - http:
+          path: hello
+          method: get
