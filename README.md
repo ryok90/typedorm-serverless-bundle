@@ -1,0 +1,1 @@
+# typedorm-serverless-bundle
